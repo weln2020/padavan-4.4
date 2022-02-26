@@ -22,7 +22,10 @@
     <script type="text/javascript" src="/itoggle.js"></script>
     <script type="text/javascript" src="/popup.js"></script>
     <script type="text/javascript" src="/help.js"></script>
-    <script>var $j = jQuery.noConflict(); < %sqm_status(); % >$j(document).ready(function() {
+    <script>
+      var $j = jQuery.noConflict(); 
+      <% sqm_status(); %>
+      $j(document).ready(function() {
         init_itoggle('sqm_enable');
         init_itoggle('sqm_active');
         init_itoggle('sqm_down_speed');
